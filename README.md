@@ -58,7 +58,7 @@ Terdapat basic command yang dapat digunakan dalam simulasi drone di unreal mengg
 | commander mode position | Mode position control |
 
 ## Screenshoot and Video
-[!img](https://raw.githubusercontent.com/shidqicate/AirSim_Multirotor/refs/heads/main/drone1.png)
+![img](https://raw.githubusercontent.com/shidqicate/AirSim_Multirotor/refs/heads/main/drone1.png)
 Want to contribute? Great!
 
 Dillinger uses Gulp + Webpack for fast developing.
