@@ -3,11 +3,11 @@
 
 [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/shidqicate)
 
 Simulasi ini merupakan implementasi **drone autonomous** menggunakan [AirSim](https://github.com/microsoft/AirSim) di lingkungan **Unreal Engine**, yang mampu mendeteksi objek-objek seperti **mobil, manusia, pohon**, dan lainnya. Proyek ini cocok untuk kebutuhan riset di bidang **computer vision**, **machine learning**, serta pengembangan sistem navigasi drone secara otomatis.
 ## 🎯 Fitur Utama
-
+---
 - 🚁 Simulasi drone menggunakan AirSim dengan Unreal Engine
 - 🔍 Deteksi objek secara real-time (mobil, manusia, pohon, dll)
 - 🎥 Streaming kamera drone (FPV)
@@ -15,7 +15,7 @@ Simulasi ini merupakan implementasi **drone autonomous** menggunakan [AirSim](ht
 - 💾 Logging data penerbangan dan visualisasi hasil deteksi
 
 ## 🛠️ Prasyarat
-
+---
 Sebelum menjalankan proyek ini, pastikan sistem Anda sudah memiliki:
 
 - [Unreal Engine 4.27+](https://www.unrealengine.com/)
@@ -25,77 +25,40 @@ Sebelum menjalankan proyek ini, pastikan sistem Anda sudah memiliki:
 - Microsoft visual studio 22
 - Desktop development with C++ 
 - NET Framework SDK
-- YOLOv5, bisa menggunakan model lain.
+- YOLOv5, atau menggunakan model lain.
 
-Markdown is a lightweight markup language based on the formatting conventions
-that people naturally use in email.
-As [John Gruber] writes on the [Markdown site][df1]
-
-> The overriding design goal for Markdown's
-> formatting syntax is to make it as readable
-> as possible. The idea is that a
-> Markdown-formatted document should be
-> publishable as-is, as plain text, without
-> looking like it's been marked up with tags
-> or formatting instructions.
-
-This text you see here is *actually- written in Markdown! To get a feel
-for Markdown's syntax, type some text into the left window and
-watch the results in the right.
-
-## Tech
-
-Dillinger uses a number of open source projects to work properly:
-
-- [AngularJS] - HTML enhanced for web apps!
-- [Ace Editor] - awesome web-based text editor
-- [markdown-it] - Markdown parser done right. Fast and easy to extend.
-- [Twitter Bootstrap] - great UI boilerplate for modern web apps
-- [node.js] - evented I/O for the backend
-- [Express] - fast node.js network app framework [@tjholowaychuk]
-- [Gulp] - the streaming build system
-- [Breakdance](https://breakdance.github.io/breakdance/) - HTML
-to Markdown converter
-- [jQuery] - duh
-
-And of course Dillinger itself is open source with a [public repository][dill]
- on GitHub.
 
 ## Installation
+---
+Cara installasi:
 
-Dillinger requires [Node.js](https://nodejs.org/) v10+ to run.
+- Download & Install [Epic Games Launcher](https://store.epicgames.com/it/download), [Unreal Engine 4.27](https://docs.unrealengine.com/4.27/en-US/Basics/InstallingUnrealEngine/), [AirSim Package](https://microsoft.github.io/AirSim/)
+- Untuk integrasi dan compile program dapat dilihat dari [guidebook AirSim](https://microsoft.github.io/AirSim/build_windows)
+- Simpan file ```setting.json``` ke folder **C:\Users\user\Documents\AirSim**
+- Download file ```AirSimTest01.zip``` lalu simpan juga di folder sehingga terlihat seperti ini **C:\Users\user\Documents\Unreal Project\AirSimTest01**
+- Klik kanan pada AirSimTest01.uprojectfile di folder AirSimTest01 dan pilih Generate Visual Studio project files untuk melakukan compile akhir proyek dengan file yang baru ditambahkan.
+- Jika sudah klik ```AirSimTest01.sln``` dan pastikan debugger menggunakan "Debug Game Editor" dan menggunakan platform "Win64" lalu start project.
+- Penjelasan tambahan: 
+-- file ```setting.json``` adalah tempat properti seperti jenis kendaraan, kamera, sensor, dan lainnya.
+-- terdapat file yang berekstensi .umap - itu adalah file yang berisikan map, dan dapat diganti sesuai map yang dibutuhkan.
+- untuk mengendalikan drone, saya menggunakan [PX4-autopilot](https://github.com/PX4/PX4-Autopilot)
+- deteksi objek disini menggunakan model YOLOv5 dari ultralytics yang mengambil model pretrained dan target objeknya yaitu `car` dan `person`. Saat environtment simulator sudah di setup, langkah selanjutnya yaitu menjalankan script `detect.py`. Pop up window akan menampilkan visual kamera drone dengan nama "FrontCenterRGB".
 
-Install the dependencies and devDependencies and start the server.
+## PX4-Autopilot Command List
 
-```sh
-cd dillinger
-npm i
-node app
-```
+Terdapat basic command yang dapat digunakan dalam simulasi drone di unreal menggunakan [PX4-autopilot](https://github.com/PX4/PX4-Autopilot). Untuk command lengkapnya dapat dilihat dari [dokumentasi PX4](https://docs.px4.io/main/en/).
 
-For production environments...
-
-```sh
-npm install --production
-NODE_ENV=production node app
-```
-
-## Plugins
-
-Dillinger is currently extended with the following plugins.
-Instructions on how to use them in your own application are linked below.
-
-| Plugin | README |
+| Command | Fungsi |
 | ------ | ------ |
-| Dropbox | [plugins/dropbox/README.md][PlDb] |
-| GitHub | [plugins/github/README.md][PlGh] |
-| Google Drive | [plugins/googledrive/README.md][PlGd] |
-| OneDrive | [plugins/onedrive/README.md][PlOd] |
-| Medium | [plugins/medium/README.md][PlMe] |
-| Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
+| commander arm | Mengaktifkan Motor |
+| commander disarm | Menonaktifkan Motor |
+| commander takeoff | Lepas landas (terbang) |
+| commander land | mendarat otomatis |
+| commander mode offboard | Mode offboard (kontrol dari AirSim/script MAVSDK) |
+| commander mode position | Mode position control |
 
-## Development
-
+## Screenshoot and Video
+[!img](https://raw.githubusercontent.com/shidqicate/AirSim_Multirotor/refs/heads/main/drone1.png)
 Want to contribute? Great!
 
 Dillinger uses Gulp + Webpack for fast developing.
