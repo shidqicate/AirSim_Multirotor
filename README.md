@@ -58,10 +58,9 @@ Terdapat basic command yang dapat digunakan dalam simulasi drone di unreal mengg
 | commander mode position | Mode position control |
 
 ## Screenshoot and Video
-###Foto - 1
 ![img](https://raw.githubusercontent.com/shidqicate/AirSim_Multirotor/refs/heads/main/drone1.png)
 ![video](Assets/AirSim.gif)
-###Video - 1
+
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
