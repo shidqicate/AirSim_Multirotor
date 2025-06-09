@@ -58,7 +58,7 @@ Terdapat basic command yang dapat digunakan dalam simulasi drone di unreal mengg
 | commander mode position | Mode position control |
 
 ## Screenshoot and Video
-[!img]([https://raw.githubusercontent.com/shidqicate/AirSim_Multirotor/refs/heads/main/drone1.png](https://private-user-images.githubusercontent.com/67097809/453126238-d111cdf0-295b-4a55-a9f5-ed59830782ec.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDk0OTAyOTEsIm5iZiI6MTc0OTQ4OTk5MSwicGF0aCI6Ii82NzA5NzgwOS80NTMxMjYyMzgtZDExMWNkZjAtMjk1Yi00YTU1LWE5ZjUtZWQ1OTgzMDc4MmVjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA2MDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNjA5VDE3MjYzMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWNiMTkwMWUyMjFlNTM2NjEyNGY5ZWU2NWRhNDRhNzFmM2ZkYTU1YjcyODhkOWQ1YmEyOTE4OGIxNzIwM2M2NzcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.-oaKIB8QkMeX4kxfw-nWFfTJzRb5R0ZPyA_CU3vcGeU))
+[!img](https://raw.githubusercontent.com/shidqicate/AirSim_Multirotor/refs/heads/main/drone1.png)
 Want to contribute? Great!
 
 Dillinger uses Gulp + Webpack for fast developing.
