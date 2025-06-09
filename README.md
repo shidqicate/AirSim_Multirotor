@@ -1,7 +1,6 @@
 # AirSim Drone Object Detection Simulation in Unreal Engine 4.27
 Simulasi ini merupakan implementasi **drone autonomous** menggunakan [AirSim](https://github.com/microsoft/AirSim) di lingkungan **Unreal Engine**, yang mampu mendeteksi objek-objek seperti **mobil, manusia, pohon**, dan lainnya. Proyek ini cocok untuk kebutuhan riset di bidang **computer vision**, **machine learning**, serta pengembangan sistem navigasi drone secara otomatis.
 ## 🎯 Fitur Utama
----
 - 🚁 Simulasi drone menggunakan AirSim dengan Unreal Engine
 - 🔍 Deteksi objek secara real-time (mobil, manusia, pohon, dll)
 - 🎥 Streaming kamera drone (FPV)
@@ -9,7 +8,6 @@ Simulasi ini merupakan implementasi **drone autonomous** menggunakan [AirSim](ht
 - 💾 Logging data penerbangan dan visualisasi hasil deteksi
 
 ## 🛠️ Prasyarat
----
 Sebelum menjalankan proyek ini, pastikan sistem Anda sudah memiliki:
 
 - [Unreal Engine 4.27+](https://www.unrealengine.com/)
@@ -23,7 +21,6 @@ Sebelum menjalankan proyek ini, pastikan sistem Anda sudah memiliki:
 
 
 ## Installation
----
 Cara installasi:
 
 - Download & Install [Epic Games Launcher](https://store.epicgames.com/it/download), [Unreal Engine 4.27](https://docs.unrealengine.com/4.27/en-US/Basics/InstallingUnrealEngine/), [AirSim Package](https://microsoft.github.io/AirSim/)
