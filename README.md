@@ -1,13 +1,13 @@
 # AirSim Drone Object Detection Simulation in Unreal Engine 4.27
 This simulation is an implementation of an autonomous drone using AirSim in the Unreal Engine environment, capable of detecting objects such as cars, people, trees, and more. This project is suitable for research in computer vision, machine learning, and the development of autonomous drone navigation systems
-## 🎯 Fitur Utama
+## 🎯 Main Features
 - 🚁 Drone simulation using AirSim with Unreal Engine
 - 🔍 Real-time object detection (cars, people, trees, etc.)
 - 🎥 Drone camera streaming (FPV)
 - 🧠 Can be extended for AI/Deep Learning integration (YOLO, SSD, etc.)
 - 💾 Flight data logging and detection result visualization
 
-## 🛠️ Prasyarat
+## 🛠️ Requirements
 Before running this project, make sure your system has:
 
 - [Unreal Engine 4.27+](https://www.unrealengine.com/)
