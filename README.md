@@ -40,12 +40,12 @@ There are basic commands that can be used in drone simulation in unreal using [P
 
 | Command | Function |
 | ------ | ------ |
-| commander arm | Mengaktifkan Motor |
-| commander disarm | Menonaktifkan Motor |
-| commander takeoff | Lepas landas (terbang) |
-| commander land | mendarat otomatis |
-| commander mode offboard | Mode offboard (kontrol dari AirSim/script MAVSDK) |
-| commander mode position | Mode position control |
+| commander arm | Activating the Motor |
+| commander disarm | Deactivating Motor |
+| commander takeoff | Take off (fly) |
+| commander land | auto landing |
+| commander mode offboard | Offboard mode (control from AirSim/MAVSDK script) |
+| commander mode position | Position control mode |
 
 ## Screenshoot and Video
 ![img](Assets/drone1.png)
