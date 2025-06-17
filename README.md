@@ -1,14 +1,14 @@
 # AirSim Drone Object Detection Simulation in Unreal Engine 4.27
-Simulasi ini merupakan implementasi **drone autonomous** menggunakan [AirSim](https://github.com/microsoft/AirSim) di lingkungan **Unreal Engine**, yang mampu mendeteksi objek-objek seperti **mobil, manusia, pohon**, dan lainnya. Proyek ini cocok untuk kebutuhan riset di bidang **computer vision**, **machine learning**, serta pengembangan sistem navigasi drone secara otomatis.
+This simulation is an implementation of an autonomous drone using AirSim in the Unreal Engine environment, capable of detecting objects such as cars, people, trees, and more. This project is suitable for research in computer vision, machine learning, and the development of autonomous drone navigation systems
 ## 🎯 Fitur Utama
-- 🚁 Simulasi drone menggunakan AirSim dengan Unreal Engine
-- 🔍 Deteksi objek secara real-time (mobil, manusia, pohon, dll)
-- 🎥 Streaming kamera drone (FPV)
-- 🧠 Bisa dikembangkan untuk integrasi AI/Deep Learning (YOLO, SSD, dll)
-- 💾 Logging data penerbangan dan visualisasi hasil deteksi
+- 🚁 Drone simulation using AirSim with Unreal Engine
+- 🔍 Real-time object detection (cars, people, trees, etc.)
+- 🎥 Drone camera streaming (FPV)
+- 🧠 Can be extended for AI/Deep Learning integration (YOLO, SSD, etc.)
+- 💾 Flight data logging and detection result visualization
 
 ## 🛠️ Prasyarat
-Sebelum menjalankan proyek ini, pastikan sistem Anda sudah memiliki:
+Before running this project, make sure your system has:
 
 - [Unreal Engine 4.27+](https://www.unrealengine.com/)
 - [AirSim](https://github.com/microsoft/AirSim)
@@ -17,28 +17,28 @@ Sebelum menjalankan proyek ini, pastikan sistem Anda sudah memiliki:
 - Microsoft visual studio 22
 - Desktop development with C++ 
 - NET Framework SDK
-- YOLOv5, atau menggunakan model lain.
+- YOLOv5, or any model.
 
 
 ## Installation
-Cara installasi:
+How to install:
 
 - Download & Install [Epic Games Launcher](https://store.epicgames.com/it/download), [Unreal Engine 4.27](https://docs.unrealengine.com/4.27/en-US/Basics/InstallingUnrealEngine/), [AirSim Package](https://microsoft.github.io/AirSim/)
-- Untuk integrasi dan compile program dapat dilihat dari [guidebook AirSim](https://microsoft.github.io/AirSim/build_windows)
-- Simpan file ```setting.json``` ke folder **C:\Users\user\Documents\AirSim**
-- Download file ```AirSimTest01.zip``` lalu simpan juga di folder sehingga terlihat seperti ini **C:\Users\user\Documents\Unreal Project\AirSimTest01**
-- Klik kanan pada AirSimTest01.uprojectfile di folder AirSimTest01 dan pilih Generate Visual Studio project files untuk melakukan compile akhir proyek dengan file yang baru ditambahkan.
-- Jika sudah klik ```AirSimTest01.sln``` dan pastikan debugger menggunakan "Debug Game Editor" dan menggunakan platform "Win64" lalu start project.
-- file ```setting.json``` adalah tempat properti seperti jenis kendaraan, kamera, sensor, dan lainnya.
-- terdapat file yang berekstensi .umap - itu adalah file yang berisikan map, dan dapat diganti sesuai map yang dibutuhkan.
-- untuk mengendalikan drone, saya menggunakan [PX4-autopilot](https://github.com/PX4/PX4-Autopilot)
-- deteksi objek disini menggunakan model YOLOv5 dari ultralytics yang mengambil model pretrained dan target objeknya yaitu `car` dan `person`. Saat environtment simulator sudah di setup, langkah selanjutnya yaitu menjalankan script `detect.py`. Pop up window akan menampilkan visual kamera drone dengan nama "FrontCenterRGB".
+- For integration and compiling steps, follow the [AirSim guidebook](https://microsoft.github.io/AirSim/build_windows)
+- Save the ```setting.json``` file to **C:\Users\user\Documents\AirSim**
+- Download the ```AirSimTest01.zip``` file and extract to **C:\Users\user\Documents\Unreal Project\AirSimTest01**
+- Right-click on AirSimTest01.uproject file in the AirSimTest01 folder and select Generate Visual Studio project files to compile the project with the new files.
+- Open ```AirSimTest01.sln```, set the debugger to "Debug Game Editor" and platform to "Win64", then start the project
+- file ```setting.json``` is a place for properties such as vehicle types, cameras, sensors, and others.
+- ".umap" files are map files — you can change them based on which environment you want to use
+- To control the drone, I'm using [PX4-autopilot](https://github.com/PX4/PX4-Autopilot)
+- Object detection here uses YOLOv5 from Ultralytics based on a pretrained model with `car` and `person` as the target classes. Once the simulation environment is ready, run the `detect.py` script. A pop-up window will display the drone's front camera view titled "FrontCenterRGB".
 
 ## PX4-Autopilot Command List
 
-Terdapat basic command yang dapat digunakan dalam simulasi drone di unreal menggunakan [PX4-autopilot](https://github.com/PX4/PX4-Autopilot). Untuk command lengkapnya dapat dilihat dari [dokumentasi PX4](https://docs.px4.io/main/en/).
+There are basic commands that can be used in drone simulation in unreal using [PX4-autopilot](https://github.com/PX4/PX4-Autopilot). For complete commands can be seen from [dokumentasi PX4](https://docs.px4.io/main/en/).
 
-| Command | Fungsi |
+| Command | Function |
 | ------ | ------ |
 | commander arm | Mengaktifkan Motor |
 | commander disarm | Menonaktifkan Motor |
